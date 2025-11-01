@@ -101,6 +101,5 @@ Atributos principais:
 
 ##  Autor
 
-**Seu Nome Aqui**  
-Curso: Machine Learning Aplicado à Saúde  
-Data de entrega: Novembro de 2025
+**Abraão Saraiva**  
+Curso: Machine Learning 
