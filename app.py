@@ -218,13 +218,16 @@ with st.expander("🧠 Informações adicionais"):
     st.markdown("---")
     st.markdown("### Interpretações práticas")
     st.write("""
-    - Pacientes com **IMC (bmi)** e **pressão arterial (bp)** altos apresentam **maior risco de progressão** da doença.
-    - A variável **s5 (glicose plasmática)** confirma o impacto direto do controle glicêmico no diabetes.
-    - O K-Means permite separar **perfis clínicos distintos**:
-        - Cluster com altos valores de **bmi** e **s5** → grupo de **alto risco metabólico**.
-        - Cluster com valores equilibrados → grupo **de controle ou baixo risco**.
-    - Aplicações práticas:
-        - Apoio à decisão médica.
-        - Monitoramento de pacientes com risco metabólico.
+    1. **IMC (bmi)** é o fator mais sensível: quanto maior o IMC, maior tende a ser o valor de `target` (progressão da doença).
+    2. **Colesterol/glicose (s5)** acompanha o IMC: pacientes com s5 alto aparecem mais nos clusters de maior risco.
+    3. **Pressão arterial (bp)** reforça o risco: isoladamente tem impacto menor, mas combinada com IMC alto define perfis críticos.
+    4. **Idade e sexo** têm pouca influência na progressão neste conjunto de dados.
+    5. **O modelo Random Forest** confirma as mesmas variáveis-chave do EDA (bmi, s5, bp).
+    6. **Os clusters do K-Means** podem ser usados como faixas de prioridade:
+       - Cluster com **bmi e s5 baixos** → acompanhamento padrão.
+       - Cluster intermediário → acompanhamento regular.
+       - Cluster com **bmi e s5 altos** → prioridade de atenção clínica.
+    7. **Pode-se gerar uma regra de triagem**: “IMC alto + s5 alto → risco metabólico”.
+    8. **Os dados indicam foco em fatores controláveis** (peso, colesterol, pressão), não em idade ou sexo.
         - Estudos populacionais e prevenção em saúde pública.
     """)
