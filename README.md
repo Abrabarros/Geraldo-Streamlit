@@ -25,7 +25,12 @@ Atributos principais:
 - `sex`: sexo (codificado)  
 - `bmi`: índice de massa corporal (IMC)  
 - `bp`: pressão arterial média  
-- `s1` a `s6`: medidas laboratoriais  
+- `s1` – Colesterol total (lipídios totais no sangue).
+- `s2` – LDL/VLDL (colesterol “ruim”).
+- `s3` – HDL (colesterol “bom”).
+- `s4` – Triglicerídeos (gordura no sangue).
+- `s5` – Glicose plasmática.
+- `s6` – Índice metabólico complementar.
 - `target`: progressão da doença (variável alvo)
 
 ---
